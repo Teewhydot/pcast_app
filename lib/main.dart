@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       title: 'abubakar_issa_s_application4',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.mainScreen,
+      initialRoute: AppRoutes.mainscreen1,
       routes: AppRoutes.routes,
     );
   }

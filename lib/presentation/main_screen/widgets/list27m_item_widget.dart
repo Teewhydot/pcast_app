@@ -1,8 +1,8 @@
 import 'package:pcast_app/core/app_export.dart';
 
 // ignore: must_be_immutable
-class List27mItemWidget extends StatelessWidget {
-  const List27mItemWidget({super.key});
+class PodcastAuthorsWidget extends StatelessWidget {
+  const PodcastAuthorsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

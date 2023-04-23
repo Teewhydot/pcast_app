@@ -20,6 +20,7 @@ class AppRoutes {
   static const String loginScreen = '/login_screen';
 
   static const String mainScreen = '/main_screen';
+  static const String mainscreen1 = '/main_screen1';
 
   static const String hamburgerMenuScreen = '/hamburger_menu_screen';
 
@@ -54,6 +55,7 @@ class AppRoutes {
     browseEpisodesScreen: (context) => BrowseEpisodesScreen(),
     authorScreen: (context) => const AuthorScreen(),
     topicScreen: (context) => const TopicScreen(),
-    appNavigationScreen: (context) => const AppNavigationScreen()
+    appNavigationScreen: (context) => const AppNavigationScreen(),
+    mainscreen1: (context) => const MainScreen1(),
   };
 }
