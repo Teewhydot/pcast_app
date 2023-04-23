@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pcast_app/core/utils/color_constant.dart';
 import 'package:pcast_app/core/utils/image_constant.dart';
 import 'package:pcast_app/core/utils/size_utils.dart';
+import 'package:pcast_app/presentation/main_screen/widgets/otherpodcasts_item_widget.dart';
 import 'package:pcast_app/routes/app_routes.dart';
 import 'package:pcast_app/theme/app_style.dart';
 import 'package:pcast_app/widgets/app_bar/appbar_image.dart';
@@ -11,7 +12,6 @@ import 'package:pcast_app/widgets/custom_icon_button.dart';
 import 'package:pcast_app/widgets/custom_image_view.dart';
 
 import '../main_screen/widgets/list27m_item_widget.dart';
-import '../main_screen/widgets/otherpodcasts_item_widget.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
@@ -123,7 +123,7 @@ class MainScreen extends StatelessWidget {
                                                                       .whiteA70019))))
                                                 ]))),
                                     Align(
-                                        alignment: Alignment.topRight,
+                                        alignment: Alignment.topCenter,
                                         child: Padding(
                                             padding: getPadding(top: 143),
                                             child: Row(children: [
@@ -216,129 +216,9 @@ class MainScreen extends StatelessWidget {
                                                             alignment: Alignment
                                                                 .topLeft)
                                                       ])),
-                                              Container(
-                                                  width: getHorizontalSize(9),
-                                                  margin: getMargin(
-                                                      left: 24, top: 12),
-                                                  child: Row(children: [
-                                                    SingleChildScrollView(
-                                                        scrollDirection:
-                                                            Axis.horizontal,
-                                                        child: IntrinsicWidth(
-                                                            child: SizedBox(
-                                                                height:
-                                                                    getVerticalSize(
-                                                                        180),
-                                                                width:
-                                                                    getHorizontalSize(
-                                                                        309),
-                                                                child: Stack(
-                                                                    alignment:
-                                                                        Alignment
-                                                                            .center,
-                                                                    children: [
-                                                                      CustomImageView(
-                                                                          imagePath: ImageConstant
-                                                                              .imgBg3,
-                                                                          height: getVerticalSize(
-                                                                              180),
-                                                                          width: getHorizontalSize(
-                                                                              309),
-                                                                          radius: BorderRadius.only(
-                                                                              topLeft: Radius.circular(getHorizontalSize(24)),
-                                                                              topRight: Radius.circular(getHorizontalSize(24)),
-                                                                              bottomLeft: Radius.circular(getHorizontalSize(24))),
-                                                                          alignment: Alignment.center),
-                                                                      Align(
-                                                                          alignment:
-                                                                              Alignment.center,
-                                                                          child: Padding(
-                                                                              padding: getPadding(left: 32, right: 24),
-                                                                              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                                Container(width: getHorizontalSize(236), margin: getMargin(right: 17), child: Text("A sit ut iaculis nibh tincidunt feugiat", maxLines: null, textAlign: TextAlign.left, style: AppStyle.txtRobotoMedium24)),
-                                                                                Padding(
-                                                                                    padding: getPadding(top: 16),
-                                                                                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                                                                                      Padding(
-                                                                                          padding: getPadding(top: 3, bottom: 4),
-                                                                                          child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                                            SizedBox(
-                                                                                                height: getVerticalSize(22),
-                                                                                                width: getHorizontalSize(145),
-                                                                                                child: Stack(alignment: Alignment.topRight, children: [
-                                                                                                  Align(alignment: Alignment.center, child: Text("23.05.2019         24:15:05", overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoRegular13Bluegray400)),
-                                                                                                  CustomImageView(svgPath: ImageConstant.imgClock, height: getSize(13), width: getSize(13), alignment: Alignment.topRight, margin: getMargin(top: 3, right: 58))
-                                                                                                ])),
-                                                                                            Row(children: [
-                                                                                              CustomImageView(imagePath: ImageConstant.img03w, height: getSize(16), width: getSize(16), radius: BorderRadius.circular(getHorizontalSize(8)), margin: getMargin(top: 3, bottom: 3)),
-                                                                                              Padding(padding: getPadding(left: 8), child: Text("Arlene Nguyen", overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoRegular13WhiteA7001))
-                                                                                            ])
-                                                                                          ])),
-                                                                                      CustomIconButton(height: 51, width: 51, variant: IconButtonVariant.FillRedA400, shape: IconButtonShape.RoundedBorder25, child: CustomImageView(svgPath: ImageConstant.imgShape))
-                                                                                    ]))
-                                                                              ])))
-                                                                    ])))),
-                                                    SingleChildScrollView(
-                                                        scrollDirection:
-                                                            Axis.horizontal,
-                                                        padding: getPadding(
-                                                            left: 24),
-                                                        child: IntrinsicWidth(
-                                                            child: SizedBox(
-                                                                height:
-                                                                    getVerticalSize(
-                                                                        180),
-                                                                width:
-                                                                    getHorizontalSize(
-                                                                        309),
-                                                                child: Stack(
-                                                                    alignment:
-                                                                        Alignment
-                                                                            .center,
-                                                                    children: [
-                                                                      CustomImageView(
-                                                                          imagePath: ImageConstant
-                                                                              .imgBg4,
-                                                                          height: getVerticalSize(
-                                                                              180),
-                                                                          width: getHorizontalSize(
-                                                                              309),
-                                                                          radius: BorderRadius.only(
-                                                                              topLeft: Radius.circular(getHorizontalSize(24)),
-                                                                              topRight: Radius.circular(getHorizontalSize(24)),
-                                                                              bottomLeft: Radius.circular(getHorizontalSize(24))),
-                                                                          alignment: Alignment.center),
-                                                                      Align(
-                                                                          alignment:
-                                                                              Alignment.center,
-                                                                          child: Padding(
-                                                                              padding: getPadding(left: 32, right: 24),
-                                                                              child: Column(mainAxisSize: MainAxisSize.min, crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                                Container(width: getHorizontalSize(236), margin: getMargin(right: 17), child: Text("Bibendum quis gravida ultricies.", maxLines: null, textAlign: TextAlign.left, style: AppStyle.txtRobotoMedium24)),
-                                                                                Padding(
-                                                                                    padding: getPadding(top: 16),
-                                                                                    child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
-                                                                                      Padding(
-                                                                                          padding: getPadding(top: 3, bottom: 4),
-                                                                                          child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.start, children: [
-                                                                                            SizedBox(
-                                                                                                height: getVerticalSize(22),
-                                                                                                width: getHorizontalSize(145),
-                                                                                                child: Stack(alignment: Alignment.topRight, children: [
-                                                                                                  Align(alignment: Alignment.center, child: Text("23.05.2019         24:15:05", overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoRegular13Bluegray400)),
-                                                                                                  CustomImageView(svgPath: ImageConstant.imgClock, height: getSize(13), width: getSize(13), alignment: Alignment.topRight, margin: getMargin(top: 3, right: 58))
-                                                                                                ])),
-                                                                                            Row(children: [
-                                                                                              CustomImageView(imagePath: ImageConstant.img03w, height: getSize(16), width: getSize(16), radius: BorderRadius.circular(getHorizontalSize(8)), margin: getMargin(top: 3, bottom: 3)),
-                                                                                              Padding(padding: getPadding(left: 8), child: Text("Courtney Alexander", overflow: TextOverflow.ellipsis, textAlign: TextAlign.left, style: AppStyle.txtRobotoRegular13WhiteA7001))
-                                                                                            ])
-                                                                                          ])),
-                                                                                      CustomIconButton(height: 51, width: 51, variant: IconButtonVariant.FillRedA400, shape: IconButtonShape.RoundedBorder25, child: CustomImageView(svgPath: ImageConstant.imgShape))
-                                                                                    ]))
-                                                                              ])))
-                                                                    ]))))
-                                                  ]))
                                             ]))),
+
+                                    ///Listen podcasts section start
                                     Align(
                                         alignment: Alignment.bottomRight,
                                         child: Padding(
@@ -437,6 +317,8 @@ class MainScreen extends StatelessWidget {
                                                             return const OtherpodcastsItemWidget();
                                                           }))
                                                 ]))),
+
+                                    /// Podcast authors section start
                                     Align(
                                         alignment: Alignment.bottomRight,
                                         child: Padding(

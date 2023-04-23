@@ -45,10 +45,8 @@ class Assets {
   static const String imagesImg03w16x16 = 'assets/images/img_03w_16x16.png';
   static const String imagesImg03w32x32 = 'assets/images/img_03w_32x32.png';
   static const String imagesImg04w = 'assets/images/img_04w.png';
-  static const String imagesImg24basicmorevertical =
-      'assets/images/img_24basicmorevertical.svg';
-  static const String imagesImg24musicsoundwave =
-      'assets/images/img_24musicsoundwave.svg';
+  static const String imagesImg24basicmorevertical = 'assets/images/img_24basicmorevertical.svg';
+  static const String imagesImg24musicsoundwave = 'assets/images/img_24musicsoundwave.svg';
   static const String imagesImg27m = 'assets/images/img_27m.png';
   static const String imagesImg42w = 'assets/images/img_42w.png';
   static const String imagesImgArrowdown = 'assets/images/img_arrowdown.svg';
@@ -56,12 +54,9 @@ class Assets {
   static const String imagesImgArrowright = 'assets/images/img_arrowright.svg';
   static const String imagesImgAuthor1 = 'assets/images/img_author1.png';
   static const String imagesImgAuthor2 = 'assets/images/img_author2.png';
-  static const String imagesImgAuthorimage =
-      'assets/images/img_authorimage.png';
-  static const String imagesImgAuthorimage153x117 =
-      'assets/images/img_authorimage_153x117.png';
-  static const String imagesImgAuthorimage154x120 =
-      'assets/images/img_authorimage_154x120.png';
+  static const String imagesImgAuthorimage = 'assets/images/img_authorimage.png';
+  static const String imagesImgAuthorimage153x117 = 'assets/images/img_authorimage_153x117.png';
+  static const String imagesImgAuthorimage154x120 = 'assets/images/img_authorimage_154x120.png';
   static const String imagesImgBg = 'assets/images/img_bg.png';
   static const String imagesImgBg1 = 'assets/images/img_bg_1.png';
   static const String imagesImgBg1126x375 = 'assets/images/img_bg_1126x375.png';
@@ -77,16 +72,12 @@ class Assets {
   static const String imagesImgBg6 = 'assets/images/img_bg_6.png';
   static const String imagesImgBg7 = 'assets/images/img_bg_7.png';
   static const String imagesImgCamera = 'assets/images/img_camera.svg';
-  static const String imagesImgCameraWhiteA700 =
-      'assets/images/img_camera_white_a700.svg';
+  static const String imagesImgCameraWhiteA700 = 'assets/images/img_camera_white_a700.svg';
   static const String imagesImgCheckmark = 'assets/images/img_checkmark.svg';
-  static const String imagesImgCheckmarkWhiteA700 =
-      'assets/images/img_checkmark_white_a700.svg';
+  static const String imagesImgCheckmarkWhiteA700 = 'assets/images/img_checkmark_white_a700.svg';
   static const String imagesImgClock = 'assets/images/img_clock.svg';
-  static const String imagesImgClockBlueGray400 =
-      'assets/images/img_clock_blue_gray_400.svg';
-  static const String imagesImgClockWhiteA700 =
-      'assets/images/img_clock_white_a700.svg';
+  static const String imagesImgClockBlueGray400 = 'assets/images/img_clock_blue_gray_400.svg';
+  static const String imagesImgClockWhiteA700 = 'assets/images/img_clock_white_a700.svg';
   static const String imagesImgClose = 'assets/images/img_close.svg';
   static const String imagesImgDownload = 'assets/images/img_download.svg';
   static const String imagesImgEye = 'assets/images/img_eye.svg';
@@ -95,68 +86,49 @@ class Assets {
   static const String imagesImgFile = 'assets/images/img_file.svg';
   static const String imagesImgFrame = 'assets/images/img_frame.png';
   static const String imagesImgGlobe = 'assets/images/img_globe.svg';
-  static const String imagesImgGlobeBlueGray400 =
-      'assets/images/img_globe_blue_gray_400.svg';
+  static const String imagesImgGlobeBlueGray400 = 'assets/images/img_globe_blue_gray_400.svg';
   static const String imagesImgGlow = 'assets/images/img_glow.png';
   static const String imagesImgGlow99x115 = 'assets/images/img_glow_99x115.png';
   static const String imagesImgGlow99x117 = 'assets/images/img_glow_99x117.png';
   static const String imagesImgGoogle = 'assets/images/img_google.svg';
   static const String imagesImgGroup117 = 'assets/images/img_group117.png';
   static const String imagesImgImage = 'assets/images/img_image.png';
-  static const String imagesImgImage1037x375 =
-      'assets/images/img_image_1037x375.png';
+  static const String imagesImgImage1037x375 = 'assets/images/img_image_1037x375.png';
   static const String imagesImgImage21 = 'assets/images/img_image21.png';
   static const String imagesImgImage3 = 'assets/images/img_image3.png';
   static const String imagesImgImage31 = 'assets/images/img_image3_1.png';
-  static const String imagesImgImage3136x147 =
-      'assets/images/img_image3_136x147.png';
+  static const String imagesImgImage3136x147 = 'assets/images/img_image3_136x147.png';
   static const String imagesImgImage32 = 'assets/images/img_image3_2.png';
   static const String imagesImgImage33 = 'assets/images/img_image3_3.png';
   static const String imagesImgImage4 = 'assets/images/img_image4.png';
   static const String imagesImgImage65x71 = 'assets/images/img_image_65x71.png';
   static const String imagesImgLogo = 'assets/images/img_logo.png';
-  static const String imagesImgLogoBlueA700 =
-      'assets/images/img_logo_blue_a700.png';
+  static const String imagesImgLogoBlueA700 = 'assets/images/img_logo_blue_a700.png';
   static const String imagesImgMail = 'assets/images/img_mail.svg';
   static const String imagesImgMegaphone = 'assets/images/img_megaphone.svg';
   static const String imagesImgMenu = 'assets/images/img_menu.svg';
   static const String imagesImgMicrophone = 'assets/images/img_microphone.svg';
-  static const String imagesImgMicrophoneWhiteA700 =
-      'assets/images/img_microphone_white_a700.svg';
-  static const String imagesImgMicrophoneWhiteA70031x31 =
-      'assets/images/img_microphone_white_a700_31x31.svg';
+  static const String imagesImgMicrophoneWhiteA700 = 'assets/images/img_microphone_white_a700.svg';
+  static const String imagesImgMicrophoneWhiteA70031x31 = 'assets/images/img_microphone_white_a700_31x31.svg';
   static const String imagesImgMusic = 'assets/images/img_music.svg';
-  static const String imagesImgMusicWhiteA700 =
-      'assets/images/img_music_white_a700.svg';
-  static const String imagesImgNotification =
-      'assets/images/img_notification.svg';
+  static const String imagesImgMusicWhiteA700 = 'assets/images/img_music_white_a700.svg';
+  static const String imagesImgNotification = 'assets/images/img_notification.svg';
   static const String imagesImgPasek = 'assets/images/img_pasek.svg';
   static const String imagesImgQuestion = 'assets/images/img_question.svg';
   static const String imagesImgRefresh = 'assets/images/img_refresh.svg';
   static const String imagesImgSearch = 'assets/images/img_search.svg';
-  static const String imagesImgSearchBlueGray400 =
-      'assets/images/img_search_blue_gray_400.svg';
+  static const String imagesImgSearchBlueGray400 = 'assets/images/img_search_blue_gray_400.svg';
   static const String imagesImgSend = 'assets/images/img_send.svg';
   static const String imagesImgShape = 'assets/images/img_shape.svg';
-  static const String imagesImgShapeWhiteA700 =
-      'assets/images/img_shape_white_a700.svg';
-  static const String imagesImgShapestroke =
-      'assets/images/img_shapestroke.svg';
+  static const String imagesImgShapeWhiteA700 = 'assets/images/img_shape_white_a700.svg';
+  static const String imagesImgShapestroke = 'assets/images/img_shapestroke.svg';
   static const String imagesImgStar = 'assets/images/img_star.svg';
-  static const String imagesImgStarGray300 =
-      'assets/images/img_star_gray_300.svg';
+  static const String imagesImgStarGray300 = 'assets/images/img_star_gray_300.svg';
   static const String imagesImgThumbsup = 'assets/images/img_thumbsup.svg';
   static const String imagesImgTicket = 'assets/images/img_ticket.svg';
   static const String imagesImgTwitter = 'assets/images/img_twitter.svg';
   static const String imagesImgUser = 'assets/images/img_user.svg';
   static const String imagesImgVector = 'assets/images/img_vector.svg';
   static const String imagesImgVolume = 'assets/images/img_volume.svg';
-  static const String imagessImg = 'assets/imagess/img.png';
-  static const String imagessImg1 = 'assets/imagess/img_1.png';
-  static const String imagessImg2 = 'assets/imagess/img_2.png';
-  static const String imagessImg3 = 'assets/imagess/img_3.png';
-  static const String imagessImg4 = 'assets/imagess/img_4.png';
-  static const String imagessImg5 = 'assets/imagess/img_5.png';
-  static const String imagessImg6 = 'assets/imagess/img_6.png';
-  static const String imagessImg7 = 'assets/imagess/img_7.png';
+
 }
