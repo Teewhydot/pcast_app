@@ -11,7 +11,7 @@ import 'package:pcast_app/widgets/custom_button.dart';
 import 'package:pcast_app/widgets/custom_icon_button.dart';
 import 'package:pcast_app/widgets/custom_image_view.dart';
 
-import '../main_screen/widgets/list27m_item_widget.dart';
+import '../main_screen/widgets/podcast_authors_widget.dart';
 
 class MainScreen extends StatelessWidget {
   const MainScreen({super.key});
