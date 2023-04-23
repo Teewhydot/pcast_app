@@ -1,0 +1,59 @@
+name: pcast_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.0-255.2.beta <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_screenutil: ^5.5.4
+  provider: ^6.0.4
+  page_transition: "^2.0.9"
+  font_awesome_flutter: ^10.2.1
+  flutter_bloc: ^8.0.0
+  cached_network_image: ^3.2.1
+  flutter_svg: ^1.1.6
+  intl: ^0.17.0
+  url_launcher: 6.0.20
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/imagess/
+    - assets/images/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/RobotoBold.ttf
+          weight: 700
+        - asset: assets/fonts/RobotoMedium.ttf
+          weight: 500
+        - asset: assets/fonts/RobotoRegular.ttf
+          weight: 400
+        - asset: assets/fonts/RobotoBlack.ttf
+          weight: 900
+    - family: Exo
+      fonts:
+        - asset: assets/fonts/ExoSemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/ExoBold.ttf
+          weight: 700
+        - asset: assets/fonts/ExoExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/ExoMedium.ttf
+          weight: 500
+        - asset: assets/fonts/ExoRegular.ttf
+          weight: 400
