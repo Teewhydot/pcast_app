@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.standard,
       ),
-      title: 'abubakar_issa_s_application4',
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.mainscreen1,
+      initialRoute: AppRoutes.podcastScreen,
       routes: AppRoutes.routes,
     );
   }
