@@ -21,14 +21,14 @@ class HamburgerMenuScreen extends StatelessWidget {
                 height: size.height,
                 width: double.maxFinite,
                 child: Stack(alignment: Alignment.center, children: [
-                  Align(
-                      alignment: Alignment.bottomLeft,
-                      child: Padding(
-                          padding: getPadding(left: 33, bottom: 353),
-                          child: Text("Listen other podcasts",
-                              overflow: TextOverflow.ellipsis,
-                              textAlign: TextAlign.left,
-                              style: AppStyle.txtRobotoMedium24WhiteA700))),
+                  // Align(
+                  //     alignment: Alignment.bottomLeft,
+                  //     child: Padding(
+                  //         padding: getPadding(left: 33, bottom: 353),
+                  //         child: Text("Listen other podcasts",
+                  //             overflow: TextOverflow.ellipsis,
+                  //             textAlign: TextAlign.left,
+                  //             style: AppStyle.txtRobotoMedium24WhiteA700))),
                   Align(
                       alignment: Alignment.center,
                       child: Container(
@@ -57,26 +57,22 @@ class HamburgerMenuScreen extends StatelessWidget {
                                           CustomAppBar(
                                               height: getVerticalSize(84),
                                               title: Container(
-                                                  width: getHorizontalSize(102),
+                                                  width: getHorizontalSize(202),
                                                   margin: getMargin(left: 70),
                                                   child: Text(
-                                                      "Hello,\nSamatha!",
+                                                      "Hello,\nTeewhydot!",
                                                       maxLines: null,
                                                       textAlign: TextAlign.left,
                                                       style: AppStyle
                                                           .txtRobotoMedium24)),
                                               actions: [
-                                                Container(
+                                                SizedBox(
                                                     height: getVerticalSize(25),
                                                     width:
                                                         getHorizontalSize(24),
-                                                    margin: getMargin(
-                                                        left: 33,
-                                                        top: 1,
-                                                        right: 32),
                                                     child: Stack(
-                                                        alignment:
-                                                            Alignment.topRight,
+                                                        alignment: Alignment
+                                                            .centerRight,
                                                         children: [
                                                           AppbarImage(
                                                               height:
@@ -88,41 +84,6 @@ class HamburgerMenuScreen extends StatelessWidget {
                                                               margin: getMargin(
                                                                   top: 5,
                                                                   right: 4)),
-                                                          Align(
-                                                              alignment:
-                                                                  Alignment
-                                                                      .topRight,
-                                                              child: Container(
-                                                                  margin: getMargin(
-                                                                      left: 10,
-                                                                      bottom:
-                                                                          11),
-                                                                  padding:
-                                                                      getPadding(
-                                                                          all:
-                                                                              3),
-                                                                  decoration: AppDecoration
-                                                                      .outlineBlack900
-                                                                      .copyWith(
-                                                                          borderRadius: BorderRadiusStyle
-                                                                              .circleBorder8),
-                                                                  child: Column(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .min,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .start,
-                                                                      children: [
-                                                                        Container(
-                                                                            height:
-                                                                                getSize(8),
-                                                                            width: getSize(8),
-                                                                            margin: getMargin(all: 3),
-                                                                            decoration: BoxDecoration(color: ColorConstant.redA400, borderRadius: BorderRadius.circular(getHorizontalSize(4)), boxShadow: [
-                                                                              BoxShadow(color: ColorConstant.red500B2, spreadRadius: getHorizontalSize(2), blurRadius: getHorizontalSize(2), offset: const Offset(0, 0))
-                                                                            ]))
-                                                                      ])))
                                                         ])),
                                                 AppbarImage(
                                                     height: getSize(20),
