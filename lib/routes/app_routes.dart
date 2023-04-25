@@ -20,8 +20,6 @@ class AppRoutes {
 
   static const String loginScreen = '/login_screen';
 
-  static const String mainScreen = '/main_screen';
-
   static const String hamburgerMenuScreen = '/hamburger_menu_screen';
 
   static const String podcastScreen = '/podcast_screen';
@@ -45,7 +43,6 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     browseTopicsScreen: (context) => BrowseTopicsScreen(),
     loginScreen: (context) => LoginScreen(),
-    mainScreen: (context) => const MainScreen(),
     searchScreen: (context) => SearchScreen(),
     browseCategoriesScreen: (context) => BrowseCategoriesScreen(),
     browseAuthorsScreen: (context) => BrowseAuthorsScreen(),

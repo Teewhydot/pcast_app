@@ -614,9 +614,7 @@ class AppNavigationScreen extends StatelessWidget {
     Navigator.pushNamed(context, AppRoutes.loginScreen);
   }
 
-  onTapMain(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.mainScreen);
-  }
+  onTapMain(BuildContext context) {}
 
   onTapHamburgerMenu(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.hamburgerMenuScreen);
