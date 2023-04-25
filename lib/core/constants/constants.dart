@@ -8,3 +8,11 @@ onTapArrowLeft(BuildContext context) {
 onTapSearch1(BuildContext context) {
   Navigator.pushNamed(context, AppRoutes.searchScreen);
 }
+
+onTapSearch(BuildContext context) {
+  Navigator.pushNamed(context, AppRoutes.searchScreen);
+}
+
+onTapRowglobe(BuildContext context) {
+  Navigator.pushNamed(context, AppRoutes.browseTopicsScreen);
+}

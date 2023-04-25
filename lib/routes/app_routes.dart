@@ -5,7 +5,6 @@ import 'package:pcast_app/presentation/browse_authors_screen/browse_authors_scre
 import 'package:pcast_app/presentation/browse_episodes_screen/browse_episodes_screen.dart';
 import 'package:pcast_app/presentation/browse_podcasts_screen/browse_podcasts_screen.dart';
 import 'package:pcast_app/presentation/browse_topics_screen/browse_topics_screen.dart';
-import 'package:pcast_app/presentation/hamburger_menu_screen/hamburger_menu_screen.dart';
 import 'package:pcast_app/presentation/login_screen/login_screen.dart';
 import 'package:pcast_app/presentation/main_screen/main_screen.dart';
 import 'package:pcast_app/presentation/podcast_screen/podcast_screen.dart';
@@ -16,6 +15,8 @@ import '../presentation/browse_categories_screen/browse_categories_screen.dart';
 
 class AppRoutes {
   static const String browseTopicsScreen = '/browse_topics_screen';
+
+  static const String customHomeScreen = '/custom_home_screen';
 
   static const String loginScreen = '/login_screen';
 
@@ -45,7 +46,6 @@ class AppRoutes {
     browseTopicsScreen: (context) => BrowseTopicsScreen(),
     loginScreen: (context) => LoginScreen(),
     mainScreen: (context) => const MainScreen(),
-    hamburgerMenuScreen: (context) => const HamburgerMenuScreen(),
     searchScreen: (context) => SearchScreen(),
     browseCategoriesScreen: (context) => BrowseCategoriesScreen(),
     browseAuthorsScreen: (context) => BrowseAuthorsScreen(),
@@ -55,5 +55,6 @@ class AppRoutes {
     topicScreen: (context) => const TopicScreen(),
     appNavigationScreen: (context) => const AppNavigationScreen(),
     podcastScreen: (context) => const PodcastScreen(),
+    customHomeScreen: (context) => const CustomHomeTranslate(),
   };
 }
