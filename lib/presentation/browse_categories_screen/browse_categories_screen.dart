@@ -1,4 +1,8 @@
+// ignore_for_file: must_be_immutable
+
+import 'package:anim_search_bar/anim_search_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:pcast_app/core/utils/color_constant.dart';
 import 'package:pcast_app/core/utils/image_constant.dart';
 import 'package:pcast_app/core/utils/size_utils.dart';
@@ -11,10 +15,36 @@ import 'package:pcast_app/widgets/custom_search_view.dart';
 import '../browse_categories_screen/widgets/browse_item_widget.dart';
 import '../browse_categories_screen/widgets/tabs1_item_widget.dart';
 
-class BrowseCategoriesScreen extends StatelessWidget {
-  TextEditingController searchoneController = TextEditingController();
+class BrowseCategoriesScreen extends StatefulWidget {
+  const BrowseCategoriesScreen({super.key});
 
-  BrowseCategoriesScreen({super.key});
+  @override
+  State<BrowseCategoriesScreen> createState() => _BrowseCategoriesScreenState();
+}
+
+class _BrowseCategoriesScreenState extends State<BrowseCategoriesScreen> {
+  TextEditingController searchOneController = TextEditingController();
+  final List<String> _suggestions = [
+    'All',
+    'Arts',
+    'Business',
+    'Comedy',
+    'Education',
+    'Fiction',
+    'Government',
+    'History',
+    'Health',
+    'Kids & Family',
+    'Leisure',
+    'Music',
+    'News',
+    'Religion',
+    'Science',
+    'Sports',
+    'Technology',
+    'True Crime',
+    'TV & Film',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +126,7 @@ class BrowseCategoriesScreen extends StatelessWidget {
                   ),
                   CustomSearchView(
                     focusNode: FocusNode(),
-                    controller: searchoneController,
+                    controller: searchOneController,
                     hintText: "Robert |",
                     margin: getMargin(
                       top: 38,
@@ -120,6 +150,22 @@ class BrowseCategoriesScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  AnimSearchBar(
+                      width: 400,
+                      textController: searchOneController,
+                      style: AppStyle.txtRobotoRegular16,
+                      color: ColorConstant.gray900,
+                      closeSearchOnSuffixTap: true,
+                      rtl: true,
+                      searchIconColor: ColorConstant.whiteA700,
+                      helpText: "Search",
+                      animationDurationInMilli: 400,
+                      inputFormatters: [
+                        LengthLimitingTextInputFormatter(20),
+                        FilteringTextInputFormatter.digitsOnly,
+                      ],
+                      onSuffixTap: () {},
+                      onSubmitted: (_) {}),
                   Align(
                     alignment: Alignment.centerRight,
                     child: SizedBox(

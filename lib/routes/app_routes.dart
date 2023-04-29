@@ -6,7 +6,7 @@ import 'package:pcast_app/presentation/browse_episodes_screen/browse_episodes_sc
 import 'package:pcast_app/presentation/browse_podcasts_screen/browse_podcasts_screen.dart';
 import 'package:pcast_app/presentation/browse_topics_screen/browse_topics_screen.dart';
 import 'package:pcast_app/presentation/login_screen/login_screen.dart';
-import 'package:pcast_app/presentation/main_screen/main_screen.dart';
+import 'package:pcast_app/presentation/main_screen/custom_home_screen.dart';
 import 'package:pcast_app/presentation/podcast_screen/podcast_screen.dart';
 import 'package:pcast_app/presentation/search_screen/search_screen.dart';
 import 'package:pcast_app/presentation/topic_screen/topic_screen.dart';
