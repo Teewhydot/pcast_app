@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.standard,
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.topicScreen,
+      initialRoute: AppRoutes.customHomeScreen,
       routes: AppRoutes.routes,
     );
   }
