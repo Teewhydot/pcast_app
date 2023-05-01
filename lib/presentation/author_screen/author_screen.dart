@@ -12,9 +12,46 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../author_screen/widgets/author_item_widget.dart';
 
-class AuthorScreen extends StatelessWidget {
-  const AuthorScreen({super.key});
+class AuthorWrapper extends StatelessWidget {
+  const AuthorWrapper({Key? key}) : super(key: key);
 
+  @override
+  Widget build(BuildContext context) {
+    return const AuthorScreen(
+        color: Colors.green,
+        authorName: 'Tunde',
+        authorDescription: 'jhhshj',
+        numberOfFollowers: 123,
+        podcastCount: 12);
+  }
+}
+
+class AuthorScreen extends StatefulWidget {
+  final Color color;
+  final String authorName;
+  final String authorDescription;
+  final int podcastCount;
+  final String? twitterLink;
+  final String? facebookLink;
+  final String? instagramLink;
+  final int? numberOfFollowers;
+
+  const AuthorScreen(
+      {super.key,
+      required this.color,
+      required this.authorName,
+      required this.authorDescription,
+      this.facebookLink,
+      this.instagramLink,
+      this.numberOfFollowers,
+      required this.podcastCount,
+      this.twitterLink});
+
+  @override
+  State<AuthorScreen> createState() => _AuthorScreenState();
+}
+
+class _AuthorScreenState extends State<AuthorScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -195,7 +232,7 @@ class AuthorScreen extends StatelessWidget {
                                                     padding:
                                                         getPadding(left: 8),
                                                     child: Text(
-                                                        "Podcasts: 7 286",
+                                                        'Podcasts: ${widget.podcastCount} ',
                                                         overflow: TextOverflow
                                                             .ellipsis,
                                                         textAlign:
@@ -208,7 +245,7 @@ class AuthorScreen extends StatelessWidget {
                                 alignment: Alignment.topRight,
                                 child: Padding(
                                     padding: getPadding(top: 130),
-                                    child: Text("Mary Beth Keane ",
+                                    child: Text(widget.authorName,
                                         overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.left,
                                         style: AppStyle.txtRobotoBold48)))
@@ -239,50 +276,51 @@ class AuthorScreen extends StatelessWidget {
                                                               getHorizontalSize(
                                                                   296),
                                                           child: Text(
-                                                              "Mary Beth Keane is an American writer of Irish parentage. She is the author of The Walking People, Fever,and Ask Again, Yes. In 2011 she was named one of the National...",
+                                                              widget
+                                                                  .authorDescription,
                                                               maxLines: null,
                                                               textAlign:
                                                                   TextAlign
                                                                       .left,
                                                               style: AppStyle
                                                                   .txtRobotoRegular13Bluegray400))),
-                                                  Align(
-                                                      alignment:
-                                                          Alignment.bottomRight,
-                                                      child: Row(
-                                                          mainAxisAlignment:
-                                                              MainAxisAlignment
-                                                                  .end,
-                                                          mainAxisSize:
-                                                              MainAxisSize.min,
-                                                          children: [
-                                                            Text("Read more",
-                                                                overflow:
-                                                                    TextOverflow
-                                                                        .ellipsis,
-                                                                textAlign:
-                                                                    TextAlign
-                                                                        .left,
-                                                                style: AppStyle
-                                                                    .txtRobotoMedium13),
-                                                            CustomImageView(
-                                                                svgPath:
-                                                                    ImageConstant
-                                                                        .imgArrowdown,
-                                                                height:
-                                                                    getVerticalSize(
-                                                                        6),
-                                                                width:
-                                                                    getHorizontalSize(
-                                                                        10),
-                                                                margin:
-                                                                    getMargin(
-                                                                        left:
-                                                                            13,
-                                                                        top: 5,
-                                                                        bottom:
-                                                                            4))
-                                                          ]))
+                                                  // Align(
+                                                  //     alignment:
+                                                  //         Alignment.bottomRight,
+                                                  //     child: Row(
+                                                  //         mainAxisAlignment:
+                                                  //             MainAxisAlignment
+                                                  //                 .end,
+                                                  //         mainAxisSize:
+                                                  //             MainAxisSize.min,
+                                                  //         children: [
+                                                  //           Text("Read more",
+                                                  //               overflow:
+                                                  //                   TextOverflow
+                                                  //                       .ellipsis,
+                                                  //               textAlign:
+                                                  //                   TextAlign
+                                                  //                       .left,
+                                                  //               style: AppStyle
+                                                  //                   .txtRobotoMedium13),
+                                                  //           CustomImageView(
+                                                  //               svgPath:
+                                                  //                   ImageConstant
+                                                  //                       .imgArrowdown,
+                                                  //               height:
+                                                  //                   getVerticalSize(
+                                                  //                       6),
+                                                  //               width:
+                                                  //                   getHorizontalSize(
+                                                  //                       10),
+                                                  //               margin:
+                                                  //                   getMargin(
+                                                  //                       left:
+                                                  //                           13,
+                                                  //                       top: 5,
+                                                  //                       bottom:
+                                                  //                           4))
+                                                  //         ]))
                                                 ])),
                                         Padding(
                                             padding:
@@ -297,7 +335,8 @@ class AuthorScreen extends StatelessWidget {
                                                       left: 24,
                                                       top: 17,
                                                       bottom: 16),
-                                                  child: Text("+1.3k followers",
+                                                  child: Text(
+                                                      "+${widget.numberOfFollowers}k followers",
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       textAlign: TextAlign.left,
@@ -347,7 +386,7 @@ class AuthorScreen extends StatelessWidget {
                                                       height:
                                                           getVerticalSize(16));
                                                 },
-                                                itemCount: 3,
+                                                itemCount: 8,
                                                 itemBuilder: (context, index) {
                                                   return const AuthorItemWidget();
                                                 }))

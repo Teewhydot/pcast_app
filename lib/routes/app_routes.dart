@@ -1,17 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:pcast_app/presentation/app_navigation_screen/app_navigation_screen.dart';
-import 'package:pcast_app/presentation/author_screen/author_screen.dart';
 import 'package:pcast_app/presentation/browse_authors_screen/browse_authors_screen.dart';
 import 'package:pcast_app/presentation/browse_episodes_screen/browse_episodes_screen.dart';
 import 'package:pcast_app/presentation/browse_podcasts_screen/browse_podcasts_screen.dart';
+import 'package:pcast_app/presentation/browse_screen/browse_screen.dart';
 import 'package:pcast_app/presentation/browse_topics_screen/browse_topics_screen.dart';
 import 'package:pcast_app/presentation/login_screen/login_screen.dart';
 import 'package:pcast_app/presentation/main_screen/custom_home_screen.dart';
 import 'package:pcast_app/presentation/podcast_screen/podcast_screen.dart';
 import 'package:pcast_app/presentation/search_screen/search_screen.dart';
 import 'package:pcast_app/presentation/topic_screen/topic_screen.dart';
-
-import '../presentation/browse_categories_screen/browse_categories_screen.dart';
 
 class AppRoutes {
   static const String browseTopicsScreen = '/browse_topics_screen';
@@ -26,7 +24,7 @@ class AppRoutes {
 
   static const String searchScreen = '/search_screen';
 
-  static const String browseCategoriesScreen = '/browse_categories_screen';
+  static const String browseScreen = '/browse_categories_screen';
 
   static const String browseAuthorsScreen = '/browse_authors_screen';
 
@@ -43,12 +41,11 @@ class AppRoutes {
   static Map<String, WidgetBuilder> routes = {
     browseTopicsScreen: (context) => BrowseTopicsScreen(),
     loginScreen: (context) => LoginScreen(),
-    searchScreen: (context) => SearchScreen(),
-    browseCategoriesScreen: (context) => BrowseCategoriesScreen(),
+    searchScreen: (context) => const SearchScreen(),
+    browseScreen: (context) => const BrowseScreen(),
     browseAuthorsScreen: (context) => BrowseAuthorsScreen(),
     browsePodcastsScreen: (context) => BrowsePodcastsScreen(),
     browseEpisodesScreen: (context) => BrowseEpisodesScreen(),
-    authorScreen: (context) => const AuthorScreen(),
     topicScreen: (context) => const TopicScreen(),
     appNavigationScreen: (context) => const AppNavigationScreen(),
     podcastScreen: (context) => const PodcastScreen(),

@@ -14,5 +14,5 @@ onTapSearch(BuildContext context) {
 }
 
 onTapBrowse(BuildContext context) {
-  Navigator.pushNamed(context, AppRoutes.browseTopicsScreen);
+  Navigator.pushNamed(context, AppRoutes.browseScreen);
 }

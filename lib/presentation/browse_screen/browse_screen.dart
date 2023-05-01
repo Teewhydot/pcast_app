@@ -3,43 +3,21 @@
 import 'package:pcast_app/core/app_export.dart';
 import 'package:pcast_app/presentation/browse_episodes_screen/widgets/listshapestroke_item_widget.dart';
 import 'package:pcast_app/presentation/browse_podcasts_screen/widgets/listbg1_item_widget.dart';
+import 'package:pcast_app/presentation/browse_screen/widgets/browse_item_widget.dart';
+import 'package:pcast_app/presentation/browse_screen/widgets/tabs1_item_widget.dart';
 import 'package:pcast_app/presentation/browse_topics_screen/widgets/listbg_item_widget.dart';
 import 'package:pcast_app/widgets/custom_search_view.dart';
 
-import '../browse_categories_screen/widgets/browse_item_widget.dart';
-import '../browse_categories_screen/widgets/tabs1_item_widget.dart';
-
-class BrowseCategoriesScreen extends StatefulWidget {
-  const BrowseCategoriesScreen({super.key});
+class BrowseScreen extends StatefulWidget {
+  const BrowseScreen({super.key});
 
   @override
-  State<BrowseCategoriesScreen> createState() => _BrowseCategoriesScreenState();
+  State<BrowseScreen> createState() => _BrowseScreenState();
 }
 
-class _BrowseCategoriesScreenState extends State<BrowseCategoriesScreen> {
+class _BrowseScreenState extends State<BrowseScreen> {
   TextEditingController searchOneController = TextEditingController();
   List<bool> isActive = [true, false, false, false, false];
-  final List<String> _suggestions = [
-    'All',
-    'Arts',
-    'Business',
-    'Comedy',
-    'Education',
-    'Fiction',
-    'Government',
-    'History',
-    'Health',
-    'Kids & Family',
-    'Leisure',
-    'Music',
-    'News',
-    'Religion',
-    'Science',
-    'Sports',
-    'Technology',
-    'True Crime',
-    'TV & Film',
-  ];
 
   @override
   Widget build(BuildContext context) {

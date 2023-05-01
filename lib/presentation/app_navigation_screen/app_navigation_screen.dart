@@ -333,9 +333,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                                   .bluegray400))
                                                     ]))),
                                         GestureDetector(
-                                            onTap: () {
-                                              onTapBrowseCategories(context);
-                                            },
+                                            onTap: () {},
                                             child: Container(
                                                 decoration:
                                                     AppDecoration.fillWhiteA700,
@@ -378,9 +376,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                                   .bluegray400))
                                                     ]))),
                                         GestureDetector(
-                                            onTap: () {
-                                              onTapBrowseAuthors(context);
-                                            },
+                                            onTap: () {},
                                             child: Container(
                                                 decoration:
                                                     AppDecoration.fillWhiteA700,
@@ -423,9 +419,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                                   .bluegray400))
                                                     ]))),
                                         GestureDetector(
-                                            onTap: () {
-                                              onTapBrowsePodcasts(context);
-                                            },
+                                            onTap: () {},
                                             child: Container(
                                                 decoration:
                                                     AppDecoration.fillWhiteA700,
@@ -468,9 +462,7 @@ class AppNavigationScreen extends StatelessWidget {
                                                                   .bluegray400))
                                                     ]))),
                                         GestureDetector(
-                                            onTap: () {
-                                              onTapBrowseEpisodes(context);
-                                            },
+                                            onTap: () {},
                                             child: Container(
                                                 decoration:
                                                     AppDecoration.fillWhiteA700,
@@ -626,22 +618,6 @@ class AppNavigationScreen extends StatelessWidget {
 
   onTapSearch(BuildContext context) {
     Navigator.pushNamed(context, AppRoutes.searchScreen);
-  }
-
-  onTapBrowseCategories(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.browseCategoriesScreen);
-  }
-
-  onTapBrowseAuthors(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.browseAuthorsScreen);
-  }
-
-  onTapBrowsePodcasts(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.browsePodcastsScreen);
-  }
-
-  onTapBrowseEpisodes(BuildContext context) {
-    Navigator.pushNamed(context, AppRoutes.browseEpisodesScreen);
   }
 
   onTapAuthor(BuildContext context) {
