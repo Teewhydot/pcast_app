@@ -144,6 +144,7 @@ class _AuthorScreenState extends State<AuthorScreen> {
                                     padding: getPadding(top: 26, bottom: 26),
                                     decoration: AppDecoration.fillTealA700
                                         .copyWith(
+                                            color: widget.color,
                                             borderRadius: BorderRadiusStyle
                                                 .customBorderBL24),
                                     child: Column(
@@ -242,9 +243,9 @@ class _AuthorScreenState extends State<AuthorScreen> {
                                               ]))
                                         ]))),
                             Align(
-                                alignment: Alignment.topRight,
+                                alignment: Alignment.topLeft,
                                 child: Padding(
-                                    padding: getPadding(top: 130),
+                                    padding: getPadding(top: 100, left: 33),
                                     child: Text(widget.authorName,
                                         overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.left,

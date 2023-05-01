@@ -1,6 +1,7 @@
 // ignore_for_file: must_be_immutable
 
 import 'package:pcast_app/core/app_export.dart';
+import 'package:pcast_app/presentation/author_screen/author_screen.dart';
 import 'package:pcast_app/presentation/browse_episodes_screen/widgets/listshapestroke_item_widget.dart';
 import 'package:pcast_app/presentation/browse_podcasts_screen/widgets/listbg1_item_widget.dart';
 import 'package:pcast_app/presentation/browse_screen/widgets/browse_item_widget.dart';
@@ -286,324 +287,385 @@ class _BrowseScreenState extends State<BrowseScreen> {
                               child: Stack(
                                 alignment: Alignment.center,
                                 children: [
-                                  Align(
-                                    alignment: Alignment.topCenter,
-                                    child: SizedBox(
-                                      height: getVerticalSize(
-                                        158,
-                                      ),
-                                      width: getHorizontalSize(
-                                        309,
-                                      ),
-                                      child: Stack(
-                                        alignment: Alignment.centerLeft,
-                                        children: [
-                                          Align(
-                                            alignment: Alignment.bottomCenter,
-                                            child: Container(
-                                              padding: getPadding(
-                                                left: 43,
-                                                top: 27,
-                                                right: 43,
-                                                bottom: 27,
-                                              ),
-                                              decoration: AppDecoration
-                                                  .fillBlueA700
-                                                  .copyWith(
-                                                borderRadius: BorderRadiusStyle
-                                                    .customBorderTL24,
-                                              ),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.min,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    "Robert Dugoni",
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
-                                                    textAlign: TextAlign.left,
-                                                    style: AppStyle
-                                                        .txtRobotoMedium18,
-                                                  ),
-                                                  Padding(
-                                                    padding: getPadding(
-                                                      top: 6,
-                                                      right: 22,
-                                                    ),
-                                                    child: Text(
-                                                      "Podcasts: 7 286",
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  AuthorScreen(
+                                                    color:
+                                                        ColorConstant.blueA200,
+                                                    authorName: 'Robert Dugoni',
+                                                    authorDescription: '',
+                                                    podcastCount: 1293,
+                                                    numberOfFollowers: 120,
+                                                  )));
+                                    },
+                                    child: Align(
+                                      alignment: Alignment.topCenter,
+                                      child: SizedBox(
+                                        height: getVerticalSize(
+                                          158,
+                                        ),
+                                        width: getHorizontalSize(
+                                          309,
+                                        ),
+                                        child: Stack(
+                                          alignment: Alignment.centerLeft,
+                                          children: [
+                                            Align(
+                                              alignment: Alignment.bottomCenter,
+                                              child: Container(
+                                                padding: getPadding(
+                                                  left: 43,
+                                                  top: 27,
+                                                  right: 43,
+                                                  bottom: 27,
+                                                ),
+                                                decoration: AppDecoration
+                                                    .fillBlueA700
+                                                    .copyWith(
+                                                  borderRadius:
+                                                      BorderRadiusStyle
+                                                          .customBorderTL24,
+                                                ),
+                                                child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.end,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      "Robert Dugoni",
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       textAlign: TextAlign.left,
                                                       style: AppStyle
-                                                          .txtRobotoRegular13WhiteA700,
+                                                          .txtRobotoMedium18,
                                                     ),
-                                                  ),
-                                                ],
+                                                    Padding(
+                                                      padding: getPadding(
+                                                        top: 6,
+                                                        right: 22,
+                                                      ),
+                                                      child: Text(
+                                                        "Podcasts: 7 286",
+                                                        overflow: TextOverflow
+                                                            .ellipsis,
+                                                        textAlign:
+                                                            TextAlign.left,
+                                                        style: AppStyle
+                                                            .txtRobotoRegular13WhiteA700,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.centerLeft,
-                                            child: Container(
-                                              height: getVerticalSize(
-                                                158,
-                                              ),
-                                              width: getHorizontalSize(
-                                                117,
-                                              ),
-                                              margin: getMargin(
-                                                left: 9,
-                                              ),
-                                              child: Stack(
-                                                alignment:
-                                                    Alignment.bottomCenter,
-                                                children: [
-                                                  CustomImageView(
-                                                    imagePath: ImageConstant
-                                                        .imgAuthorimage,
-                                                    height: getVerticalSize(
-                                                      158,
+                                            Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Container(
+                                                height: getVerticalSize(
+                                                  158,
+                                                ),
+                                                width: getHorizontalSize(
+                                                  117,
+                                                ),
+                                                margin: getMargin(
+                                                  left: 9,
+                                                ),
+                                                child: Stack(
+                                                  alignment:
+                                                      Alignment.bottomCenter,
+                                                  children: [
+                                                    CustomImageView(
+                                                      imagePath: ImageConstant
+                                                          .imgAuthorimage,
+                                                      height: getVerticalSize(
+                                                        158,
+                                                      ),
+                                                      width: getHorizontalSize(
+                                                        117,
+                                                      ),
+                                                      alignment:
+                                                          Alignment.center,
                                                     ),
-                                                    width: getHorizontalSize(
-                                                      117,
+                                                    CustomImageView(
+                                                      imagePath:
+                                                          ImageConstant.imgGlow,
+                                                      height: getVerticalSize(
+                                                        99,
+                                                      ),
+                                                      width: getHorizontalSize(
+                                                        114,
+                                                      ),
+                                                      alignment: Alignment
+                                                          .bottomCenter,
                                                     ),
-                                                    alignment: Alignment.center,
-                                                  ),
-                                                  CustomImageView(
-                                                    imagePath:
-                                                        ImageConstant.imgGlow,
-                                                    height: getVerticalSize(
-                                                      99,
-                                                    ),
-                                                    width: getHorizontalSize(
-                                                      114,
-                                                    ),
-                                                    alignment:
-                                                        Alignment.bottomCenter,
-                                                  ),
-                                                ],
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
-                                  Align(
-                                    alignment: Alignment.center,
-                                    child: SizedBox(
-                                      height: getVerticalSize(
-                                        154,
-                                      ),
-                                      width: getHorizontalSize(
-                                        309,
-                                      ),
-                                      child: Stack(
-                                        alignment: Alignment.centerLeft,
-                                        children: [
-                                          Align(
-                                            alignment: Alignment.bottomCenter,
-                                            child: Container(
-                                              padding: getPadding(
-                                                left: 58,
-                                                top: 27,
-                                                right: 58,
-                                                bottom: 27,
-                                              ),
-                                              decoration: AppDecoration
-                                                  .fillRedA400
-                                                  .copyWith(
-                                                borderRadius: BorderRadiusStyle
-                                                    .customBorderTL24,
-                                              ),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.min,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    "J.K. Rowling",
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
-                                                    textAlign: TextAlign.left,
-                                                    style: AppStyle
-                                                        .txtRobotoMedium18,
-                                                  ),
-                                                  Padding(
-                                                    padding: getPadding(
-                                                      top: 6,
-                                                      right: 7,
-                                                    ),
-                                                    child: Text(
-                                                      "Podcasts: 7 286",
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  AuthorScreen(
+                                                    color:
+                                                        ColorConstant.redA400,
+                                                    authorName: 'JK Rowling',
+                                                    authorDescription: '',
+                                                    podcastCount: 1293,
+                                                    numberOfFollowers: 120,
+                                                  )));
+                                    },
+                                    child: Align(
+                                      alignment: Alignment.center,
+                                      child: SizedBox(
+                                        height: getVerticalSize(
+                                          154,
+                                        ),
+                                        width: getHorizontalSize(
+                                          309,
+                                        ),
+                                        child: Stack(
+                                          alignment: Alignment.centerLeft,
+                                          children: [
+                                            Align(
+                                              alignment: Alignment.bottomCenter,
+                                              child: Container(
+                                                padding: getPadding(
+                                                  left: 58,
+                                                  top: 27,
+                                                  right: 58,
+                                                  bottom: 27,
+                                                ),
+                                                decoration: AppDecoration
+                                                    .fillRedA400
+                                                    .copyWith(
+                                                  borderRadius:
+                                                      BorderRadiusStyle
+                                                          .customBorderTL24,
+                                                ),
+                                                child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.end,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      "J.K. Rowling",
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       textAlign: TextAlign.left,
                                                       style: AppStyle
-                                                          .txtRobotoRegular13WhiteA700,
+                                                          .txtRobotoMedium18,
                                                     ),
-                                                  ),
-                                                ],
+                                                    Padding(
+                                                      padding: getPadding(
+                                                        top: 6,
+                                                        right: 7,
+                                                      ),
+                                                      child: Text(
+                                                        "Podcasts: 7 286",
+                                                        overflow: TextOverflow
+                                                            .ellipsis,
+                                                        textAlign:
+                                                            TextAlign.left,
+                                                        style: AppStyle
+                                                            .txtRobotoRegular13WhiteA700,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.centerLeft,
-                                            child: Container(
-                                              height: getVerticalSize(
-                                                154,
-                                              ),
-                                              width: getHorizontalSize(
-                                                120,
-                                              ),
-                                              margin: getMargin(
-                                                left: 16,
-                                              ),
-                                              child: Stack(
-                                                alignment:
-                                                    Alignment.bottomCenter,
-                                                children: [
-                                                  CustomImageView(
-                                                    imagePath: ImageConstant
-                                                        .imgAuthorimage154x120,
-                                                    height: getVerticalSize(
-                                                      154,
+                                            Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Container(
+                                                height: getVerticalSize(
+                                                  154,
+                                                ),
+                                                width: getHorizontalSize(
+                                                  120,
+                                                ),
+                                                margin: getMargin(
+                                                  left: 16,
+                                                ),
+                                                child: Stack(
+                                                  alignment:
+                                                      Alignment.bottomCenter,
+                                                  children: [
+                                                    CustomImageView(
+                                                      imagePath: ImageConstant
+                                                          .imgAuthorimage154x120,
+                                                      height: getVerticalSize(
+                                                        154,
+                                                      ),
+                                                      width: getHorizontalSize(
+                                                        120,
+                                                      ),
+                                                      alignment:
+                                                          Alignment.center,
                                                     ),
-                                                    width: getHorizontalSize(
-                                                      120,
+                                                    CustomImageView(
+                                                      imagePath: ImageConstant
+                                                          .imgGlow99x117,
+                                                      height: getVerticalSize(
+                                                        99,
+                                                      ),
+                                                      width: getHorizontalSize(
+                                                        117,
+                                                      ),
+                                                      alignment: Alignment
+                                                          .bottomCenter,
                                                     ),
-                                                    alignment: Alignment.center,
-                                                  ),
-                                                  CustomImageView(
-                                                    imagePath: ImageConstant
-                                                        .imgGlow99x117,
-                                                    height: getVerticalSize(
-                                                      99,
-                                                    ),
-                                                    width: getHorizontalSize(
-                                                      117,
-                                                    ),
-                                                    alignment:
-                                                        Alignment.bottomCenter,
-                                                  ),
-                                                ],
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),
-                                  Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: SizedBox(
-                                      height: getVerticalSize(
-                                        153,
-                                      ),
-                                      width: getHorizontalSize(
-                                        309,
-                                      ),
-                                      child: Stack(
-                                        alignment: Alignment.centerLeft,
-                                        children: [
-                                          Align(
-                                            alignment: Alignment.bottomCenter,
-                                            child: Container(
-                                              padding: getPadding(
-                                                left: 22,
-                                                top: 27,
-                                                right: 22,
-                                                bottom: 27,
-                                              ),
-                                              decoration: AppDecoration
-                                                  .fillTealA700
-                                                  .copyWith(
-                                                borderRadius: BorderRadiusStyle
-                                                    .customBorderTL24,
-                                              ),
-                                              child: Column(
-                                                mainAxisSize: MainAxisSize.min,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.end,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.start,
-                                                children: [
-                                                  Text(
-                                                    "Mary Beth Keane",
-                                                    overflow:
-                                                        TextOverflow.ellipsis,
-                                                    textAlign: TextAlign.left,
-                                                    style: AppStyle
-                                                        .txtRobotoMedium18,
-                                                  ),
-                                                  Padding(
-                                                    padding: getPadding(
-                                                      top: 6,
-                                                      right: 43,
-                                                    ),
-                                                    child: Text(
-                                                      "Podcasts: 7 286",
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) =>
+                                                  AuthorScreen(
+                                                    color:
+                                                        ColorConstant.tealA700,
+                                                    authorName:
+                                                        'Mary Beth Keane',
+                                                    authorDescription: '',
+                                                    podcastCount: 1293,
+                                                    numberOfFollowers: 120,
+                                                  )));
+                                    },
+                                    child: Align(
+                                      alignment: Alignment.bottomCenter,
+                                      child: SizedBox(
+                                        height: getVerticalSize(
+                                          153,
+                                        ),
+                                        width: getHorizontalSize(
+                                          309,
+                                        ),
+                                        child: Stack(
+                                          alignment: Alignment.centerLeft,
+                                          children: [
+                                            Align(
+                                              alignment: Alignment.bottomCenter,
+                                              child: Container(
+                                                padding: getPadding(
+                                                  left: 22,
+                                                  top: 27,
+                                                  right: 22,
+                                                  bottom: 27,
+                                                ),
+                                                decoration: AppDecoration
+                                                    .fillTealA700
+                                                    .copyWith(
+                                                  borderRadius:
+                                                      BorderRadiusStyle
+                                                          .customBorderTL24,
+                                                ),
+                                                child: Column(
+                                                  mainAxisSize:
+                                                      MainAxisSize.min,
+                                                  crossAxisAlignment:
+                                                      CrossAxisAlignment.end,
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.start,
+                                                  children: [
+                                                    Text(
+                                                      "Mary Beth Keane",
                                                       overflow:
                                                           TextOverflow.ellipsis,
                                                       textAlign: TextAlign.left,
                                                       style: AppStyle
-                                                          .txtRobotoRegular13WhiteA700,
+                                                          .txtRobotoMedium18,
                                                     ),
-                                                  ),
-                                                ],
+                                                    Padding(
+                                                      padding: getPadding(
+                                                        top: 6,
+                                                        right: 43,
+                                                      ),
+                                                      child: Text(
+                                                        "Podcasts: 7 286",
+                                                        overflow: TextOverflow
+                                                            .ellipsis,
+                                                        textAlign:
+                                                            TextAlign.left,
+                                                        style: AppStyle
+                                                            .txtRobotoRegular13WhiteA700,
+                                                      ),
+                                                    ),
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                          Align(
-                                            alignment: Alignment.centerLeft,
-                                            child: Container(
-                                              height: getVerticalSize(
-                                                153,
-                                              ),
-                                              width: getHorizontalSize(
-                                                117,
-                                              ),
-                                              margin: getMargin(
-                                                left: 16,
-                                              ),
-                                              child: Stack(
-                                                alignment:
-                                                    Alignment.bottomCenter,
-                                                children: [
-                                                  CustomImageView(
-                                                    imagePath: ImageConstant
-                                                        .imgAuthorimage153x117,
-                                                    height: getVerticalSize(
-                                                      153,
+                                            Align(
+                                              alignment: Alignment.centerLeft,
+                                              child: Container(
+                                                height: getVerticalSize(
+                                                  153,
+                                                ),
+                                                width: getHorizontalSize(
+                                                  117,
+                                                ),
+                                                margin: getMargin(
+                                                  left: 16,
+                                                ),
+                                                child: Stack(
+                                                  alignment:
+                                                      Alignment.bottomCenter,
+                                                  children: [
+                                                    CustomImageView(
+                                                      imagePath: ImageConstant
+                                                          .imgAuthorimage153x117,
+                                                      height: getVerticalSize(
+                                                        153,
+                                                      ),
+                                                      width: getHorizontalSize(
+                                                        117,
+                                                      ),
+                                                      alignment:
+                                                          Alignment.center,
                                                     ),
-                                                    width: getHorizontalSize(
-                                                      117,
+                                                    CustomImageView(
+                                                      imagePath: ImageConstant
+                                                          .imgGlow99x115,
+                                                      height: getVerticalSize(
+                                                        99,
+                                                      ),
+                                                      width: getHorizontalSize(
+                                                        115,
+                                                      ),
+                                                      alignment: Alignment
+                                                          .bottomCenter,
                                                     ),
-                                                    alignment: Alignment.center,
-                                                  ),
-                                                  CustomImageView(
-                                                    imagePath: ImageConstant
-                                                        .imgGlow99x115,
-                                                    height: getVerticalSize(
-                                                      99,
-                                                    ),
-                                                    width: getHorizontalSize(
-                                                      115,
-                                                    ),
-                                                    alignment:
-                                                        Alignment.bottomCenter,
-                                                  ),
-                                                ],
+                                                  ],
+                                                ),
                                               ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   ),

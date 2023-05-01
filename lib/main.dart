@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:pcast_app/presentation/author_screen/author_screen.dart';
+import 'package:pcast_app/routes/app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,9 +20,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.standard,
       ),
       debugShowCheckedModeBanner: false,
-      // initialRoute: AppRoutes.authorScreen,
-      // routes: AppRoutes.routes,
-      home: AuthorWrapper(),
+      initialRoute: AppRoutes.customHomeScreen,
+      routes: AppRoutes.routes,
     );
   }
 }
