@@ -145,39 +145,43 @@ class BrowsePodcastsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: getPadding(
-                      left: 4,
-                      top: 52,
-                    ),
-                    child: Text(
-                      "Podcasts (2)",
-                      overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.left,
-                      style: AppStyle.txtRobotoMedium16,
-                    ),
-                  ),
-                  Padding(
-                    padding: getPadding(
-                      left: 3,
-                      top: 23,
-                      right: 33,
-                    ),
-                    child: ListView.separated(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      separatorBuilder: (context, index) {
-                        return SizedBox(
-                          height: getVerticalSize(
-                            20,
-                          ),
-                        );
-                      },
-                      itemCount: 2,
-                      itemBuilder: (context, index) {
-                        return const Listbg1ItemWidget();
-                      },
-                    ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: getPadding(
+                          left: 4,
+                          top: 52,
+                        ),
+                        child: Text(
+                          "Podcasts (2)",
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.left,
+                          style: AppStyle.txtRobotoMedium16,
+                        ),
+                      ),
+                      Padding(
+                        padding: getPadding(
+                          left: 3,
+                          top: 23,
+                          right: 33,
+                        ),
+                        child: ListView.separated(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          separatorBuilder: (context, index) {
+                            return SizedBox(
+                              height: getVerticalSize(
+                                20,
+                              ),
+                            );
+                          },
+                          itemCount: 2,
+                          itemBuilder: (context, index) {
+                            return const Listbg1ItemWidget();
+                          },
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

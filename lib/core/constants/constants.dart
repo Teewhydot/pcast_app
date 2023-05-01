@@ -13,6 +13,6 @@ onTapSearch(BuildContext context) {
   Navigator.pushNamed(context, AppRoutes.searchScreen);
 }
 
-onTapRowglobe(BuildContext context) {
+onTapBrowse(BuildContext context) {
   Navigator.pushNamed(context, AppRoutes.browseTopicsScreen);
 }

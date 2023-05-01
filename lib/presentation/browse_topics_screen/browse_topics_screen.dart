@@ -147,39 +147,43 @@ class BrowseTopicsScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: getPadding(
-                      left: 6,
-                      top: 52,
-                    ),
-                    child: Text(
-                      "Topics (4)",
-                      overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.left,
-                      style: AppStyle.txtRobotoMedium16,
-                    ),
-                  ),
-                  Padding(
-                    padding: getPadding(
-                      left: 3,
-                      top: 23,
-                      right: 33,
-                    ),
-                    child: ListView.separated(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      separatorBuilder: (context, index) {
-                        return SizedBox(
-                          height: getVerticalSize(
-                            24,
-                          ),
-                        );
-                      },
-                      itemCount: 4,
-                      itemBuilder: (context, index) {
-                        return const ListbgItemWidget();
-                      },
-                    ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: getPadding(
+                          left: 6,
+                          top: 52,
+                        ),
+                        child: Text(
+                          "Topics (4)",
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.left,
+                          style: AppStyle.txtRobotoMedium16,
+                        ),
+                      ),
+                      Padding(
+                        padding: getPadding(
+                          left: 3,
+                          top: 23,
+                          right: 33,
+                        ),
+                        child: ListView.separated(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          separatorBuilder: (context, index) {
+                            return SizedBox(
+                              height: getVerticalSize(
+                                24,
+                              ),
+                            );
+                          },
+                          itemCount: 4,
+                          itemBuilder: (context, index) {
+                            return const ListbgItemWidget();
+                          },
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),

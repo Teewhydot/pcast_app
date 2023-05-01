@@ -145,39 +145,43 @@ class BrowseEpisodesScreen extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Padding(
-                    padding: getPadding(
-                      left: 3,
-                      top: 52,
-                    ),
-                    child: Text(
-                      "Episodes (3)",
-                      overflow: TextOverflow.ellipsis,
-                      textAlign: TextAlign.left,
-                      style: AppStyle.txtRobotoMedium16,
-                    ),
-                  ),
-                  Padding(
-                    padding: getPadding(
-                      left: 3,
-                      top: 23,
-                      right: 33,
-                    ),
-                    child: ListView.separated(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      separatorBuilder: (context, index) {
-                        return SizedBox(
-                          height: getVerticalSize(
-                            16,
-                          ),
-                        );
-                      },
-                      itemCount: 3,
-                      itemBuilder: (context, index) {
-                        return const ListshapestrokeItemWidget();
-                      },
-                    ),
+                  Column(
+                    children: [
+                      Padding(
+                        padding: getPadding(
+                          left: 3,
+                          top: 52,
+                        ),
+                        child: Text(
+                          "Episodes (3)",
+                          overflow: TextOverflow.ellipsis,
+                          textAlign: TextAlign.left,
+                          style: AppStyle.txtRobotoMedium16,
+                        ),
+                      ),
+                      Padding(
+                        padding: getPadding(
+                          left: 3,
+                          top: 23,
+                          right: 33,
+                        ),
+                        child: ListView.separated(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          separatorBuilder: (context, index) {
+                            return SizedBox(
+                              height: getVerticalSize(
+                                16,
+                              ),
+                            );
+                          },
+                          itemCount: 3,
+                          itemBuilder: (context, index) {
+                            return const ListshapestrokeItemWidget();
+                          },
+                        ),
+                      ),
+                    ],
                   ),
                 ],
               ),
