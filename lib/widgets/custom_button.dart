@@ -220,7 +220,7 @@ import 'package:pcast_app/core/utils/color_constant.dart';
 import 'package:pcast_app/core/utils/size_utils.dart';
 
 class CustomButton extends StatelessWidget {
-  CustomButton({
+  const CustomButton({
     Key? key,
     this.shape,
     this.padding,
@@ -309,8 +309,7 @@ class CustomButton extends StatelessWidget {
 
   ButtonStyle _buildTextButtonStyle() {
     return TextButton.styleFrom(
-      backgroundColor: _setColor(),
-      primary: ColorConstant.whiteA700,
+      foregroundColor: ColorConstant.whiteA700, backgroundColor: _setColor(),
       padding: _setPadding(),
       shape: RoundedRectangleBorder(
         borderRadius: _setBorderRadius(),

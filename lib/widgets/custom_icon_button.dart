@@ -1,4 +1,4 @@
-// ignore_for_file: constant_identifier_names
+// ignore_for_file: constant_identifier_names, must_be_immutable
 
 import 'package:flutter/material.dart';
 import 'package:pcast_app/core/utils/color_constant.dart';
