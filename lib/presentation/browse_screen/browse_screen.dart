@@ -14,6 +14,9 @@ class BrowseScreen extends StatefulWidget {
 
   @override
   State<BrowseScreen> createState() => _BrowseScreenState();
+
+  // TODO: implement preferredSize
+  Size get preferredSize => throw UnimplementedError();
 }
 
 class _BrowseScreenState extends State<BrowseScreen> {
@@ -26,54 +29,54 @@ class _BrowseScreenState extends State<BrowseScreen> {
       child: Scaffold(
         backgroundColor: ColorConstant.gray900,
         resizeToAvoidBottomInset: false,
-        appBar: CustomAppBar(
-          height: getVerticalSize(
-            95,
-          ),
-          title: AppbarImage(
-            height: getVerticalSize(
-              42,
-            ),
-            width: getHorizontalSize(
-              90,
-            ),
-            imagePath: ImageConstant.imgLogo,
-            margin: getMargin(
-              left: 33,
-            ),
-          ),
-          actions: [
-            AppbarImage(
-              height: getSize(
-                19,
-              ),
-              width: getSize(
-                19,
-              ),
-              svgPath: ImageConstant.imgSearch,
-              margin: getMargin(
-                left: 33,
-                top: 12,
-                right: 11,
-              ),
-            ),
-            AppbarImage(
-              height: getVerticalSize(
-                14,
-              ),
-              width: getHorizontalSize(
-                20,
-              ),
-              svgPath: ImageConstant.imgMenu,
-              margin: getMargin(
-                left: 49,
-                top: 14,
-                right: 44,
-                bottom: 3,
-              ),
-            ),
-          ],
-        ),
+        // appBar: CustomAppBar(
+        //   height: getVerticalSize(
+        //     95,
+        //   ),
+        //   title: AppbarImage(
+        //     height: getVerticalSize(
+        //       42,
+        //     ),
+        //     width: getHorizontalSize(
+        //       90,
+        //     ),
+        //     imagePath: ImageConstant.imgLogo,
+        //     margin: getMargin(
+        //       left: 33,
+        //     ),
+        //   ),
+        //   actions: [
+        //     AppbarImage(
+        //       height: getSize(
+        //         19,
+        //       ),
+        //       width: getSize(
+        //         19,
+        //       ),
+        //       svgPath: ImageConstant.imgSearch,
+        //       margin: getMargin(
+        //         left: 33,
+        //         top: 12,
+        //         right: 11,
+        //       ),
+        //     ),
+        //     AppbarImage(
+        //       height: getVerticalSize(
+        //         14,
+        //       ),
+        //       width: getHorizontalSize(
+        //         20,
+        //       ),
+        //       svgPath: ImageConstant.imgMenu,
+        //       margin: getMargin(
+        //         left: 49,
+        //         top: 14,
+        //         right: 44,
+        //         bottom: 3,
+        //       ),
+        //     ),
+        //   ],
+        // ),
         body: SizedBox(
           width: size.width,
           child: SingleChildScrollView(
